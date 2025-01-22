@@ -7,7 +7,7 @@
         height: 80px;
         width: 100%;
         padding: 16px;
-        background-color: aliceblue;
+        background-color: #e5e0d8;;
 
         display: flex;
         justify-content: space-between;
@@ -89,7 +89,7 @@
             top: 0;
             right: -300px;
             z-index: 1;
-            background-color: antiquewhite;
+            background-color: #809671;
             
             flex-direction: column;
             justify-content: flex-start;
@@ -101,6 +101,7 @@
 
         #sidebar:checked~.navList {
             right: 0;
+            transition: 250ms;
         }
     }
 /*  */
