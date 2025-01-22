@@ -100,6 +100,119 @@
         }
 
     /* >>>> RESPONSIVE <<<<< */
+    @media screen and (max-width: 1115px) {
+
+        /* >> Right Section << */
+        .moto {
+            font-size: 2rem
+        }
+
+        /* >> Bottom Section << */
+        .bottomSection h2 {}
+    }
+    
+    @media screen and (max-width: 900px) {
+        /* >> Right Section << */
+        .moto{
+            font-size: 2rem
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        /* >> Right Section << */
+        .moto{
+            font-size: 1.7rem
+        }
+
+        .des{
+            font-size: 0.9rem;
+        }
+
+        /* >> Bottom Section << */
+        .bottomSection h2{
+
+        }
+    }
+
+
+    @media screen and (max-width: 767px) {
+        /* >> Right Section << */
+        .moto{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .des{
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .register button {
+            width: 150px;
+            height: 60px;
+            margin: initial;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register button:nth-child(2){
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        .register button:first-child{
+            border-radius: initial;
+        }
+
+        .register{
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        /* >> Right Section << */
+        .rightSection{
+            width: 100%;
+        }
+        .moto{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .des{
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .register button {
+            width: 150px;
+            height: 60px;
+            margin: initial;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register button:nth-child(2){
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        .register button:first-child{
+            border-radius: initial;
+        }
+
+        .register{
+            font-size: 1rem;
+        }
+
+        .leftSection{
+            display: none;
+        }
+    }
 /*  */
 
 
@@ -139,4 +252,35 @@
     }
 
     /* >>>>> RESPONSIVE <<<<< */
+    @media screen and (max-width: 1115px) {
+        .bottomSection h2{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .bottomSection h2{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .bottomSection h2{
+            font-size: 1.1rem;
+        }
+
+        .bottomSection p{
+            font-size: 0.8rem;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .bottomSection h2{
+            font-size: 1.1rem;
+        }
+
+        .bottomSection p{
+            font-size: 0.8rem;
+        }
+    }
 /*  */
