@@ -7,6 +7,11 @@
 
 
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1420px) {
+        .home{
+
+        }
+    }
 /*  */
 
 
@@ -41,5 +46,50 @@
         align-items: center;
     }
     /* >>>>> RESPONSIVE <<<<< */
+    @media screen and (max-width: 1420px) {
+        .creatorContainer{
+
+        }
+
+        .creatorContainer h2{
+
+        }
+
+        .theCreator{
+            
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        .creatorContainer{
+
+        }
+
+        .creatorContainer h2{
+
+        }
+
+        .theCreator{
+            width: 100%;
+            
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .creatorContainer{
+            height: 70vh;
+        }
+
+        .creatorContainer h2{
+
+        }
+
+        .theCreator{
+            width: 100%;
+
+            flex-direction: column;
+        }
+    }
 /*  */
 
