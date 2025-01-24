@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* >>>>> ABOUT SECTION CONTAINER <<<<< */
+    .about{
+        height: 60vh;
+        width: 100%;
+
+        color: white;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> RIGHT SECTION CONTAINER <<<<< */
+    .aboutRight{
+        padding: 16px;
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .aboutStatement{
+        width: 90%;
+
+        font-size: 3rem;
+        text-align: center;
+        font-family: "Open Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+
+    .aboutAnswer{
+        width: 80%;
+
+        font-size: 20px;
+        font-family: "Open Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+    }
+
+    .aboutAnswer span{
+        font-weight: bold;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> LEFT SECTION CONTAINER <<<<< */
+    .aboutLeft{
+        height: 100%;
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* >>> USER CONTROLLER <<< */
+
+    /* >>> RESPONSIVE <<< */
+/*  */
