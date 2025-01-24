@@ -39,4 +39,53 @@
             "wdth" 100;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .sliderItemContainer{
+            height: 250px;
+            width: 250px;
+        }
+
+        .sliderDes{
+            font-size: 15px;
+        }
+
+        .sliderImg{
+
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .sliderItemContainer{
+            height: 200px;
+            width: 200px;
+            
+            gap: 0;
+        }
+
+        .sliderDes{
+            font-size: 12px;
+        }
+
+        .sliderImg{
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .sliderItemContainer{
+            height: 150px;
+            width: 150px;
+            
+        }
+
+        .sliderDes{
+            font-size: 9px;
+        }
+
+        .sliderImg{
+            width: 60px;
+            height: 60px;
+        }
+    }
 /*  */

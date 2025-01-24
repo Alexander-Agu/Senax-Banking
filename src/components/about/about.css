@@ -17,6 +17,17 @@
         align-items: center;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .about{
+
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .about{
+            flex-direction: column;
+        }
+    }
 /*  */
 
 
@@ -62,6 +73,71 @@
         font-weight: bold;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .aboutRight{
+
+        }
+
+        .aboutStatement{
+            font-size: 2.5rem;
+        }
+
+        .aboutAnswer{
+            font-size: 18px;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .aboutStatement{
+            font-size: 2rem;
+        }
+
+        .aboutAnswer{
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .aboutStatement{
+            font-size: 1.5rem;
+        }
+
+        .aboutAnswer{
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 570px) {
+        .aboutStatement{
+            font-size: 1.5rem;
+        }
+
+        .aboutAnswer{
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .aboutRight{
+            width: 90%;
+        }
+        .aboutStatement{
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .aboutAnswer{
+            font-size: 10px;
+            text-align: center;
+
+            height: 30%;
+            width: 100%;
+        }
+
+        .about{
+
+        }
+    }
 /*  */
 
 
@@ -75,8 +151,30 @@
         align-items: center;
         gap: 2rem;
     }
-
-    /* >>> USER CONTROLLER <<< */
-
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1100px) {
+        .aboutLeft{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .aboutLeft{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .aboutLeft{
+            flex-direction: row;
+
+            height: 80%;
+            width: 100%;
+
+            align-items: flex-start;
+        }
+        
+    }
+
+    
 /*  */
