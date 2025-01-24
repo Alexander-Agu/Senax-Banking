@@ -10,6 +10,6 @@ import Home from './components/home/Home'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header />
-    <Home />
+    <Hero />>
   </StrictMode>,
 )
