@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap');
+
+/* >>>>> CONTACT CONTAINER SECTION <<<<< */
+    .contactContainer{
+        height: 40vh;
+        width: 100%;
+        padding: 25px;
+
+        background-color: #e5d2b8;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CONTACT RIGHT SECTION <<<<< */
+    .contactRight{
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CONTACT MID SECTION <<<<< */
+    .contactMid{
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactMid h2{
+        font-size: 3.5rem;
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    .contactMid p{
+        width: 70%;
+
+        font-size: 25px;
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CONTACT LEFT SECTION <<<<< */
+    .contactLeft {
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CONTACT NAME COMPONENT <<<<<*/
+    .contactName{
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    /* >>> ROLE <<< */
+    .role{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .role h2{
+        font-size: 2rem;
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    .role p{
+        font-size: 22px;
+
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+    /* >>> CONTACTS <<< */
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact a{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .contact a:last-child{
+        color: darkblue;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
