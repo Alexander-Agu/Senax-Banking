@@ -13,7 +13,7 @@ function Home() {
       {<Hero />}
       {<About />}
 
-      <div className="creatorContainer">
+      <div className="creatorContainer" id='creators'>
           <h2>Creators</h2>
 
           <div className="theCreator">

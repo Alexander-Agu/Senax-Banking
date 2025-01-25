@@ -68,8 +68,7 @@
     border: none;
     border-radius: 20px;
     outline: none;
-    background-color: #e5d2b8;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.205);
 }
 
 /* >>> RESPONSIVE <<< */
@@ -81,8 +80,12 @@
 
 .submitsignup button {
     width: 350px;
+    height: 50px;
 
-    background-color: peru;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
 }
 
 /* >>> RESPONSIVE <<< */

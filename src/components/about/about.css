@@ -7,6 +7,7 @@
     .about{
         height: 60vh;
         width: 100%;
+        background-color: black;
 
         color: white;
 
@@ -33,6 +34,7 @@
 
 /* >>>>> RIGHT SECTION CONTAINER <<<<< */
     .aboutRight{
+        background-color: rgb(27, 27, 27);
         padding: 16px;
         height: 100%;
         width: 50%;
@@ -143,6 +145,7 @@
 
 /* >>>>> LEFT SECTION CONTAINER <<<<< */
     .aboutLeft{
+        background-color: rgb(27, 27, 27);
         height: 100%;
         width: 50%;
 

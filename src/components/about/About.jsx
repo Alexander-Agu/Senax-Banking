@@ -5,7 +5,7 @@ import SliderItem from '../sliderItem/SliderItem'
 
 function About() {
   return (
-    <article className='about'>
+    <article className='about' id='aboutUs'>
         <div className="aboutRight">
           <h2 className='aboutStatement'>
             Here is how we are different from the others.

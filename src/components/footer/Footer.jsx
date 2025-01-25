@@ -4,7 +4,7 @@ import Contact from './Contact'
 
 function Footer() {
   return (
-    <footer className='contactContainer'>
+    <footer className='contactContainer' id='contactUs'>
         <div className="contactRight">
             {<Contact />}
         </div>

@@ -16,12 +16,13 @@ function Register() {
 
     if (page === 0){
         return (
-            <section className='registerContainer'>
+            <section className='registerrContainer'>
                 {<Header />}
 
-                <div className="register">
+                <div className="registerSL">
                 <nav className='registerNav'>
-                    <button onClick={() => loginPage()}>Login</button>
+                    <button style={{
+                backgroundColor: "black", color: "white"}} onClick={() => loginPage()} >Login</button>
                     <button onClick={() => signupPage()}>Sign Up</button>
                 </nav>
                     {<Login />}
@@ -31,13 +32,14 @@ function Register() {
     }
     else if (page === 1){
         return (
-            <section className='registerContainer'>
+            <section className='registerrContainer'>
                 {<Header />}
 
-                <div className="register">
+                <div className="registerSL">
                     <nav className='registerNav'>
                         <button onClick={() => loginPage()}>Login</button>
-                        <button onClick={() => signupPage()}>Sign Up</button>
+                        <button style={{
+                backgroundColor: "black", color: "white"}} onClick={() => signupPage()}>Sign Up</button>
                     </nav>
                     {
                     

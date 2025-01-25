@@ -17,7 +17,7 @@ function Login() {
         <div className="loginInputs">
             <input type="text" onChange={e => {setEmail(e.target.value)}} placeholder='Enter Email' value={(email)} />
 
-            <input type="text" onChange={e => {setPasscode(e.target.value)}} value={passcode}/>
+            <input type="text" onChange={e => {setPasscode(e.target.value)}} value={passcode} placeholder='Password'/>
         </div>
 
         <div className="submitLogin">

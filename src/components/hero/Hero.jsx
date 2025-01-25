@@ -15,13 +15,13 @@ function Hero() {
                 </div>
 
                 <div className="register">
-                     <button>
+                     <a href='http://localhost:5173/register'>
                         Join us Today
-                     </button>
+                     </a>
 
-                     <button>
+                     <a href='http://localhost:5173/register'>
                         Login
-                     </button>
+                     </a>
                 </div>
             </div>
 
