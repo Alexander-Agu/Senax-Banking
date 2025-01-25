@@ -1,0 +1,26 @@
+/* >>>>> RESGISTER CONTAINER */
+    .registerContainer{
+        height: 100vh;
+        width: 100%;
+
+        background-image: url("/src/components/register/register.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> REGISTER SECTION <<<<< */
+    .register{
+        height: 90%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */

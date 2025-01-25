@@ -6,12 +6,11 @@ import Hero from './components/hero/Hero'
 import About from './components/About/About'
 import Home from './components/home/Home'
 import Footer from './components/footer/Footer'
+import Register from './components/register/Register'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header />
-    <Home />
-    <Footer />
+    <Register />
   </StrictMode>,
 )

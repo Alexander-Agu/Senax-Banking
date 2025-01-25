@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+/* >>>>> signup CONTAINER <<<<< */
+.signupContainer {
+    height: 65%;
+    width: 30rem;
+    background-color: white;
+
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> signup WELCOME SECTION <<<<< */
+.signupWelcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupWelcome h2 {
+    font-size: 2rem;
+    font-family: "Quicksand",
+        serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.signupWelcome p {
+    font-size: 25px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+/* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> signup INPUTS SECTION <<<<< */
+.signupInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signupInputs input {
+    height: 55px;
+    width: 250px;
+    padding-left: 10px;
+
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #e5d2b8;
+    color: black;
+}
+
+/* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> signup SUBMIT SECTION <<<<< */
+.submitsignup {}
+
+.submitsignup button {
+    width: 350px;
+
+    background-color: peru;
+}
+
+/* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> signup COPY RIGHT <<<<< */
+.signupCP {}
+
+.signupCP p {
+    font-size: 16px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+}
+
+/* >>> RESPONSIVE <<< */
+/*  */
