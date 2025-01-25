@@ -15,6 +15,27 @@
         align-items: center;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1110px) {
+        .contactContainer{
+
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .contactContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .contactMid{
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
 /*  */
 
 
@@ -27,6 +48,21 @@
         align-items: center;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1110px) {
+        .contactRight{
+
+        }
+    }
+
+    /* @media screen and (max-width: 700px) {
+        .contactRight {
+            grid-column-start: -3;
+            grid-column-end: -3;
+
+            grid-row-start: -2;
+            grid-row-end: -2;
+        }
+    } */
 /*  */
 
 
@@ -58,6 +94,79 @@
         font-style: normal;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1110px) {
+        .contactMid{
+
+        }
+
+        .contactMid h2{
+            font-size: 3rem;
+        }
+
+        .contactMid p{
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .contactMid{
+
+        }
+
+        .contactMid h2{
+            font-size: 2rem;
+        }
+
+        .contactMid p{
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .contactMid{
+
+        }
+
+        .contactMid h2{
+            font-size: 2rem;
+        }
+
+        .contactMid p{
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .contactMid{
+
+        }
+
+        .contactMid h2{
+            font-size: 2rem;
+        }
+
+        .contactMid p{
+            width: 90%;
+
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .contactMid{
+
+        }
+
+        .contactMid h2{
+            font-size: 1.5rem;
+        }
+
+        .contactMid p{
+            width: 70%;
+
+            font-size: 14px;
+        }
+    }
 /*  */
 
 
@@ -70,6 +179,11 @@
         align-items: center;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1110px) {
+        .contactLeft{
+
+        }
+    }
 /*  */
 
 
@@ -125,4 +239,108 @@
         color: darkblue;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1110px) {
+        .contactName{
+
+        }
+        /* >> Role << */
+        .role{
+
+        }
+
+        .role h2{
+            
+        }
+
+        .role p{
+
+        }
+        /* >> Contact << */
+        .contact{
+
+        }
+
+        .contact a{
+
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .contactName{
+
+        }
+        /* >> Role << */
+        .role{
+
+        }
+
+        .role h2{
+            font-size: 1.5rem;
+        }
+
+        .role p{
+            font-size: 20px;
+        }
+        /* >> Contact << */
+        .contact{
+
+        }
+
+        .contact a{
+            font-size: 1.3rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .contactName{
+            padding: initial;
+        }
+        /* >> Role << */
+        .role{
+
+        }
+
+        .role h2{
+            font-size: 1rem;
+        }
+
+        .role p{
+            font-size: 18px;
+        }
+        /* >> Contact << */
+        .contact{
+
+        }
+
+        .contact a{
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 40px) {
+        .contactName{
+            padding: initial;
+            gap: 1rem;
+        }
+        /* >> Role << */
+        .role{
+
+        }
+
+        .role h2{
+            font-size: 1rem;
+        }
+
+        .role p{
+            font-size: 18px;
+        }
+        /* >> Contact << */
+        .contact{
+
+        }
+
+        .contact a{
+            font-size: 1rem;
+        }
+    }
 /*  */
