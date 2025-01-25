@@ -23,7 +23,7 @@ function Header() {
 
 
                 <li className='navItem'>
-                    <a href="#" className='navLink'>
+                    <a href="http://localhost:5173/home" className='navLink'>
                         Home
                     </a>
                 </li>

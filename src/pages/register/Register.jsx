@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "./register.css"
-import Header from '../header/Header'
-import Login from '../login/Login'
-import SignUp from '../signup/SignUp'
+import Header from '../../components/header/Header'
+import Login from '../../components/login/Login'
+import SignUp from '../../components/signup/SignUp'
 
 function Register() {
     const [page, setPage] = useState(0)

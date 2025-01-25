@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../hero/Hero'
-import About from '../About/About'
+import Hero from '../../components/hero/Hero'
+import About from '../../components/About/About'
 import "./home.css"
-import Creators from '../creators/Creators'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import Creators from '../../components/creators/Creators'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 function Home() {
   return (
