@@ -1,0 +1,23 @@
+/* >>>>> DASHBOARD CONTAINER <<<<< */
+    .dashboardContainer{
+        height: 100vh;
+        width: 100%;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASHBOARD SIDEBAR <<<<< */
+    .dashSidebar{
+        height: 100%;
+        width: 100px;
+        background-color: aliceblue;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>>  <<<<< */
+
+    /* >>> RESPONSIVE <<< */
+/*  */

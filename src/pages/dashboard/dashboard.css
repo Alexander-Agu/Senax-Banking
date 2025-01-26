@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+
+/* >>>>> DASHBOARD APP <<<<< */
+    .dashboardApp {
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASHBOARD SIDEBAR <<<<< */
+    .dashSidebar {
+        height: 60px;
+        width: 100%;
+        padding: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dashSidebar a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASHBOARD INTRO SECTION <<<<< */
+    .dashIntro{
+        width: 100%;
+        padding: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* >>> DASHBOARD MASSAGE <<< */
+    .dashMassage{
+
+    }
+
+    .dashMassage h2{
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+    .dashMassage p{
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+    }
+    /* >>> DASHBOARD DATE <<< */
+    .dashDate p{
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH CONTAINER <<<<< */
+    .dashboardContainer{
+        height: 81vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH ACTIVITY <<<<< */
+    .dashActivity{
+        height: 90%;
+        width: 35rem;
+        border: 0.5px solid gray;
+        border-radius: 30px;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH VIEW <<<<< */
+    .dashView {
+        height: 90%;
+        width: 35rem;
+        border: 0.5px solid gray;
+        border-radius: 30px;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH ACTION <<<<< */
+    .dashAction {
+        height: 90%;
+        width: 35rem;
+        border: 0.5px solid gray;
+        border-radius: 30px;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */

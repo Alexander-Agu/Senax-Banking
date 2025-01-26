@@ -13,6 +13,7 @@ function Register() {
     const signupPage = ()=> {
         setPage(1)
     }
+    
 
     if (page === 0){
         return (
@@ -20,12 +21,12 @@ function Register() {
                 {<Header />}
 
                 <div className="registerSL">
-                <nav className='registerNav'>
-                    <button style={{
-                backgroundColor: "black", color: "white"}} onClick={() => loginPage()} >Login</button>
-                    <button onClick={() => signupPage()}>Sign Up</button>
-                </nav>
-                    {<Login />}
+                    <nav className='registerNav'>
+                        <button style={{
+                    backgroundColor: "black", color: "white"}} onClick={() => loginPage()} >Login</button>
+                        <button onClick={() => signupPage()}>Sign Up</button>
+                    </nav>
+                        {<Login />}
                 </div>
             </section>
         )
