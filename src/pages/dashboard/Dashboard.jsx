@@ -5,32 +5,45 @@ import "./dashboard.css"
 import Header from '../../components/header/Header';
 
 function Dashboard() {
-    const transferButton = document.getElementById("T");
-    const sendButton = document.getElementById("S");
     let [dashPage, setDashPage] = useState(0);
+    let [transferBG, setTransferBG] = useState("black")
+    let [transferC, setTransferC] = useState("white")
+    let [sendBG, setSendBG] = useState("#d3d3d3")
+    let [sendC, setSendC] = useState("black")
     let actionPage;
 
+    function transferPage(){
+        setDashPage(0);
+        setTransferBG("black");
+        setTransferC("white");
+        setSendBG("#d3d3d3");
+        setSendC("black");
+    };
 
+    function sendPage(){
+        setDashPage(1);
+        setSendBG("black");
+        setSendC("white");
+        setTransferBG("#d3d3d3");
+        setTransferC("black")
+    }
     if (dashPage === 0){
-        transferButton.style.backgroundColor = "black";
-        transferButton.style.color = "white";
+        // transferButton.style.backgroundColor = "black";
+        // transferButton.style.color = "white";
 
-        sendButton.style.backgroundColor = "#d3d3d3";
-        sendButton.style.color = "black";
+        // sendButton.style.backgroundColor = "#d3d3d3";
+        // sendButton.style.color = "black";
 
         actionPage = <Header />
     } else if (dashPage === 1){
-        sendButton.style.backgroundColor = "black";
-        sendButton.style.color = "white";
+        // sendButton.style.backgroundColor = "black";
+        // sendButton.style.color = "white";
 
-        transferButton.style.backgroundColor = "#d3d3d3";
-        transferButton.style.color = "black";
+        // transferButton.style.backgroundColor = "#d3d3d3";
+        // transferButton.style.color = "black";
 
         actionPage = 0
     }
-
-    transferButton.onclick = ()=> setDashPage(0);
-    sendButton.onclick = ()=> setDashPage(1)
 
   return (
     <main className='dashboardApp'>
@@ -73,11 +86,11 @@ function Dashboard() {
                     <div className="actBottom">
                         <h2>Actions</h2>
                         <nav className='actionNav'>
-                            <button id='T'>
+                            <button style={{backgroundColor: transferBG, color: transferC}} onClick={()=> transferPage()}>
                                 Transfer
                             </button>
 
-                            <button id='S'>
+                            <button style={{backgroundColor: sendBG, color: sendC}} onClick={()=> sendPage()}>
                                 Send Cash
                             </button>
                         </nav>
