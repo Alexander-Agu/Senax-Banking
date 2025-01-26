@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 /* >>>>> DASHBOARD APP <<<<< */
     .dashboardApp {
@@ -94,8 +96,64 @@
     .dashActivity{
         height: 90%;
         width: 35rem;
-        border: 0.5px solid gray;
+        padding-top: 15px;
+
+        border: 0.5px solid rgba(128, 128, 128, 0.158);
         border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    /* >>> Act Top <<< */
+    .actTop{
+        height: 10rem;
+        width: 95%;
+        padding-left: 30px;
+        padding-top: 10px;
+
+        border: 0.5px solid rgba(128, 128, 128, 0.226);
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    .actTop h2:first-child{
+        font-size: 18px;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .actTop h2:last-child{
+        font-size: 2rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+    /* >>> Act Bottom <<< */
+    .actBottom{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .actionNav{
+        width: 100%;
+    }
+
+    .actionNav button{
+        width: 50%;
+        height: 35px;
+
+        border: none;
+        outline: none;
     }
     /* >>> RESPONSIVE <<< */
 /*  */
@@ -105,7 +163,7 @@
     .dashView {
         height: 90%;
         width: 35rem;
-        border: 0.5px solid gray;
+        border: 0.5px solid rgba(128, 128, 128, 0.158);
         border-radius: 30px;
     }
     /* >>> RESPONSIVE <<< */
@@ -116,7 +174,7 @@
     .dashAction {
         height: 90%;
         width: 35rem;
-        border: 0.5px solid gray;
+        border: 0.5px solid rgba(128, 128, 128, 0.158);
         border-radius: 30px;
     }
     /* >>> RESPONSIVE <<< */
