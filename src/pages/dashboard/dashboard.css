@@ -144,6 +144,16 @@
         padding: 20px;
     }
 
+    .actAction{
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+
     .actionNav{
         width: 100%;
     }
@@ -176,6 +186,126 @@
         width: 35rem;
         border: 0.5px solid rgba(128, 128, 128, 0.158);
         border-radius: 30px;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> TRANSFER CONTAINER <<<<< */
+    .transferContainer{
+        height: 24rem;
+        margin: 12px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .transferContainer h2{
+        font-size: 1.8rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> RECIEVERS INPUTS SECTION <<<<< */
+    .recieverInputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .sendCash {
+        height: 60px;
+        width: 200px;
+        padding: 16px;
+
+        border: none;
+        outline: none;
+        background-color: #d3d3d3;
+        border-radius: 16px;
+
+        font-size: 1.1rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> Account Numbers */
+    .accountNum{
+        margin-top: 30px;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .accountNum:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    .accountNum input{
+        height: 60px;
+        width: 200px;
+        padding: 16px;
+
+        border: none;
+        outline: none;
+        background-color: #d3d3d3;
+        border-radius: 16px;
+
+        font-size: 1.1rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> TRANSFER BUTTON SECTION <<<<< */
+    .transferButton{
+        margin-top: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .transferButton button{
+        height: 50px;
+        width: 120px;
+
+        border: none;
+        outline: none;
+        border-radius: 16px;
+        background-color: black;
+        color: white;
+
+        font-size: 1rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .transferButton p{
+        font-size: 0.8rem;
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     }
     /* >>> RESPONSIVE <<< */
 /*  */

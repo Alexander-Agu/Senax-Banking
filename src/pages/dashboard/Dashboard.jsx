@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { GiEntryDoor } from "react-icons/gi";
 import { SlCalender } from "react-icons/sl";
 import "./dashboard.css"
-import Header from '../../components/header/Header';
+import Transfer from '../../components/transfer/Transfer';
+
 
 function Dashboard() {
     let [dashPage, setDashPage] = useState(0);
@@ -34,7 +35,7 @@ function Dashboard() {
         // sendButton.style.backgroundColor = "#d3d3d3";
         // sendButton.style.color = "black";
 
-        actionPage = <Header />
+        actionPage = <Transfer />
     } else if (dashPage === 1){
         // sendButton.style.backgroundColor = "black";
         // sendButton.style.color = "white";
@@ -84,7 +85,7 @@ function Dashboard() {
                     </div>
 
                     <div className="actBottom">
-                        <h2>Actions</h2>
+                        <h2 className='actAction'>Actions</h2>
                         <nav className='actionNav'>
                             <button style={{backgroundColor: transferBG, color: transferC}} onClick={()=> transferPage()}>
                                 Transfer
@@ -96,6 +97,7 @@ function Dashboard() {
                         </nav>
 
                         {actionPage}
+
                     </div>
                 </div>
 
