@@ -97,13 +97,19 @@ function Dashboard() {
                         </nav>
 
                         {actionPage}
-
                     </div>
                 </div>
 
 
                 <div className="dashView">
+                    <div className="cardContainer">
+                        <p>@</p>
 
+                        <div className="div">
+                            <p>**** **** **** 5456</p>
+                            <p>879</p>
+                        </div>
+                    </div>
                 </div>
 
 
