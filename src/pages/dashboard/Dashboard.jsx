@@ -3,6 +3,7 @@ import { GiEntryDoor } from "react-icons/gi";
 import { SlCalender } from "react-icons/sl";
 import "./dashboard.css"
 import Transfer from '../../components/transfer/Transfer';
+import TransferReceipt from '../../components/transferReceipt/TransferReceipt';
 
 
 function Dashboard() {
@@ -114,7 +115,13 @@ function Dashboard() {
 
 
                 <div className="dashAction">
-
+                    <TransferReceipt />
+                    <TransferReceipt />
+                    <TransferReceipt />
+                    <TransferReceipt />
+                    <TransferReceipt />
+                    <TransferReceipt />
+                    <TransferReceipt />
                 </div>
 
             </section>
