@@ -1,23 +1,23 @@
 import React from 'react'
 import "./footer.css"
-import Contact from './Contact'
+import Contacts from '../contacts/Contacts'
 
 function Footer() {
   return (
-    <footer className='contactContainer' id='contactUs'>
-        <div className="contactRight">
-            {<Contact />}
-        </div>
+    <footer className='footer'>
+        <div className="footerRight">
+            <h2>
+                Contact Us Today
+            </h2>
 
-        <div className="contactMid">
-            <h2>Get in Touch</h2>
             <p>
-                Crafted with passion by Alexander Agu and Sean Kumbo, bringing together React and Spring Boot for the Senax banking experience. A collaborative full-stack vision!
+                Versatile Solution For Your Everyday Needs
             </p>
         </div>
 
-        <div className="contactLeft">
-            {<Contact />}
+        <div className="footerLeft">
+          <Contacts />
+          <Contacts />
         </div>
     </footer>
   )

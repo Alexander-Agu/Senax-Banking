@@ -1,347 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 
-/* >>>>> CONTACT CONTAINER SECTION <<<<< */
-    .contactContainer{
-        height: 40vh;
+/* >>>>> FOOTER CONTAINER <<<<< */
+    .footer{
+        height: 50vh;
         width: 100%;
-        padding: 25px;
+        padding: 40px;
 
-        background-color: rgb(27, 27, 27);
-        color: white;
+        border-top: 1px solid #B9E248;
 
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1110px) {
-        .contactContainer{
-
-        }
-    }
-
-    @media screen and (max-width: 700px) {
-        .contactContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-        .contactMid{
-            grid-column-start: 1;
-            grid-column-end: 3;
-
-            grid-row-start: 1;
-            grid-row-end: 3;
+    @media screen and (max-width: 900px) {
+        .footer{
+            flex-direction: column;
         }
     }
 /*  */
 
 
-/* >>>>> CONTACT RIGHT SECTION <<<<< */
-    .contactRight{
+/* >>>>> RIGHT SECTION <<<<< */
+    .footerRight{
+        width: 35%;
         height: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1110px) {
-        .contactRight{
-
-        }
     }
 
-    /* @media screen and (max-width: 700px) {
-        .contactRight {
-            grid-column-start: -3;
-            grid-column-end: -3;
+    .footerRight h2{
+        color: white;
 
-            grid-row-start: -2;
-            grid-row-end: -2;
-        }
-    } */
-/*  */
-
-
-/* >>>>> CONTACT MID SECTION <<<<< */
-    .contactMid{
-        text-align: center;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contactMid h2{
-        font-size: 3.5rem;
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
+        font-size: 6rem;
+        font-family: "Anton SC", serif;
         font-weight: bolder;
         font-style: normal;
     }
 
-    .contactMid p{
+    .footerRight p{
         width: 70%;
 
-        font-size: 25px;
-        font-family: "Quicksand", serif;
+        color: white;
+
+        font-size: 30px;
+        font-family: "Antonio", serif;
         font-optical-sizing: auto;
-        font-weight: 200;
+        font-weight: 500;
         font-style: normal;
     }
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1110px) {
-        .contactMid{
+    @media screen and (max-width: 1300px) {
+        .footerRight{
 
         }
 
-        .contactMid h2{
+        .footerRight h2{
+            font-size: 5rem;
+        }   
+
+        .footerRight p{
+
+        }
+    }
+
+    @media screen and (max-width: 1040px) {
+        .footerRight{
+
+        }
+
+        .footerRight h2{
+            font-size: 4rem;
+        }   
+
+        .footerRight p{
+            font-size: 28px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .footerRight{
+            width: 100%;
+            height: 15%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footerRight h2{
             font-size: 3rem;
-        }
+        }   
 
-        .contactMid p{
-            font-size: 22px;
-        }
-    }
-
-    @media screen and (max-width: 950px) {
-        .contactMid{
-
-        }
-
-        .contactMid h2{
-            font-size: 2rem;
-        }
-
-        .contactMid p{
-            font-size: 18px;
-        }
-    }
-
-    @media screen and (max-width: 850px) {
-        .contactMid{
-
-        }
-
-        .contactMid h2{
-            font-size: 2rem;
-        }
-
-        .contactMid p{
-            font-size: 16px;
+        .footerRight p{
+            font-size: 20px;
+            width: initial;
         }
     }
 
     @media screen and (max-width: 750px) {
-        .contactMid{
+        .footerRight{
+            width: 100%;
+            height: 15%;
 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .contactMid h2{
+        .footerRight h2{
             font-size: 2rem;
-        }
+        }   
 
-        .contactMid p{
-            width: 90%;
-
+        .footerRight p{
             font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .contactMid{
-
-        }
-
-        .contactMid h2{
-            font-size: 1.5rem;
-        }
-
-        .contactMid p{
-            width: 70%;
-
-            font-size: 14px;
+            width: initial;
         }
     }
 /*  */
 
 
-/* >>>>> CONTACT LEFT SECTION <<<<< */
-    .contactLeft {
+/* >>>>> LEFT SECTION <<<<< */
+    .footerLeft{
+        width: 50%;
         height: 100%;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
     }
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1110px) {
-        .contactLeft{
-
-        }
-    }
-/*  */
-
-
-/* >>>>> CONTACT NAME COMPONENT <<<<<*/
-    .contactName{
-        height: 100%;
-        width: 100%;
-        padding: 50px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    /* >>> ROLE <<< */
-    .role{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .role h2{
-        font-size: 2rem;
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
-    }
-
-    .role p{
-        font-size: 22px;
-
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-    }
-    /* >>> CONTACTS <<< */
-    .contact{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .contact a{
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .contact a:last-child{
-        color: darkblue;
-    }
-    /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1110px) {
-        .contactName{
-
-        }
-        /* >> Role << */
-        .role{
-
-        }
-
-        .role h2{
-            
-        }
-
-        .role p{
-
-        }
-        /* >> Contact << */
-        .contact{
-
-        }
-
-        .contact a{
-
+    @media screen and (max-width: 900px) {
+        .footerLeft{
+            width: 100%;
+            height: 85;
         }
     }
 
-    @media screen and (max-width: 850px) {
-        .contactName{
-
-        }
-        /* >> Role << */
-        .role{
-
-        }
-
-        .role h2{
-            font-size: 1.5rem;
-        }
-
-        .role p{
-            font-size: 20px;
-        }
-        /* >> Contact << */
-        .contact{
-
-        }
-
-        .contact a{
-            font-size: 1.3rem;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .contactName{
-            padding: initial;
-        }
-        /* >> Role << */
-        .role{
-
-        }
-
-        .role h2{
-            font-size: 1rem;
-        }
-
-        .role p{
-            font-size: 18px;
-        }
-        /* >> Contact << */
-        .contact{
-
-        }
-
-        .contact a{
-            font-size: 1rem;
-        }
-    }
-
-    @media screen and (max-width: 40px) {
-        .contactName{
-            padding: initial;
-            gap: 1rem;
-        }
-        /* >> Role << */
-        .role{
-
-        }
-
-        .role h2{
-            font-size: 1rem;
-        }
-
-        .role p{
-            font-size: 18px;
-        }
-        /* >> Contact << */
-        .contact{
-
-        }
-
-        .contact a{
-            font-size: 1rem;
-        }
-    }
 /*  */

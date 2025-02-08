@@ -1,28 +1,57 @@
 import React from 'react'
 import "./about.css"
 import SliderItem from '../sliderItem/SliderItem'
+import ServiceCard from '../serviceCard/ServiceCard'
 
 
 function About() {
   return (
-    <article className='about' id='aboutUs'>
-        <div className="aboutRight">
-          <h2 className='aboutStatement'>
-            Here is how we are different from the others.
-          </h2>
+    <article className='aboutContainer'>
+      <div className="aboutTop">
+        <div className="aboutIntro">
+          <p>
+            Who are we?
+          </p>
 
-          <p className='aboutAnswer'>
-            One reason Senax Banking could stand out is its focus on <span>user-friendly digital experiences.</span> With a streamlined app interface, innovative features, and secure integration of modern technologies like <span>seamless account management</span> and <span>real-time notifications</span>, Senax Banking offers unparalleled convenience and control over personal finances. It’s tailored for users who value efficiency, transparency, and cutting-edge tools in their banking journey.
+          <h2>
+            Senax banking, The best digital banking you can trust
+          </h2>
+        </div>
+
+        <div className="aboutSpeech">
+          <p className='topSpeech'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum est laboriosam modi architecto consequuntur debitis.
           </p>
         </div>
+      </div>
 
-        <div className="aboutLeft">
-          {<SliderItem img={"1"} des={"            Senax Banking is proud to see our user base growing daily! Your trust inspires us to keep innovating and delivering the best banking experience. Together, we’re building something great!"}/>}
+      <div className="aboutBottom">
+        <h2 className='serv'>Our Services</h2>
 
-          {<SliderItem img={2} des={"            Senax Banking is proud to see our user base growing daily! Your trust inspires us to keep innovating and delivering the best banking experience. Together, we’re building something great!"}/>}
+        <div className="aboutServices">
+          <ServiceCard service={"Secure Banking"}/>
+          <ServiceCard service={"Transfer with Ease"}/>
+          <ServiceCard service={"Send Cash"}/>
+          <ServiceCard service={"User Friendly Experience"}/>
         </div>
+      </div>
     </article>
   )
 }
 
 export default About
+
+
+
+
+
+
+
+/* 
+        <div className="aboutLeft">
+          {<SliderItem img={"1"} des={"            Senax Banking is proud to see our user base growing daily! Your trust inspires us to keep innovating and delivering the best banking experience. Together, we’re building something great!"}/>}
+
+          {<SliderItem img={2} des={"            Senax Banking is proud to see our user base growing daily! Your trust inspires us to keep innovating and delivering the best banking experience. Together, we’re building something great!"}/>}
+        </div>
+
+*/

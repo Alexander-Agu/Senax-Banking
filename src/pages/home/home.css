@@ -1,22 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
 /* >>>>> HOME CONTAINER <<<<< */
     .home {
-
+        background-color: black;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1420px) {
-        .home{
-
-        }
-    }
 /*  */
 
 
@@ -32,13 +27,12 @@
         align-items: center;
     }
 
-    .creatorContainer h2{
-        font-family: "Open Sans", serif;
-        font-optical-sizing: auto;
+    .creatorHead{
+        color: #B9E248;
+        font-size: 3rem;
+        font-family: "Anton SC", serif;
         font-weight: bolder;
         font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
     }
 
     .theCreator{
@@ -47,50 +41,5 @@
         align-items: center;
     }
     /* >>>>> RESPONSIVE <<<<< */
-    @media screen and (max-width: 1420px) {
-        .creatorContainer{
-
-        }
-
-        .creatorContainer h2{
-
-        }
-
-        .theCreator{
-            
-        }
-    }
-
-    @media screen and (max-width: 460px) {
-        .creatorContainer{
-
-        }
-
-        .creatorContainer h2{
-
-        }
-
-        .theCreator{
-            width: 100%;
-            
-            flex-direction: column;
-        }
-    }
-
-    @media screen and (max-width: 380px) {
-        .creatorContainer{
-            height: 70vh;
-        }
-
-        .creatorContainer h2{
-
-        }
-
-        .theCreator{
-            width: 100%;
-
-            flex-direction: column;
-        }
-    }
 /*  */
 

@@ -1,383 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-/* >>>>> HERO CONTAINER <<<<< */
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+
+/* >>>>> HERO SECTION <<<<< */
     .heroContainer{
         height: 100vh;
-        width: 80%;
+        width: 100%;
 
-        display: flex;
-        flex-direction: column;
+        background-image: url("./senaxHeroIllu.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-        background-color: white;
+        /* backdrop-filter: blur(10px); */
     }
-    /* >>>> RESPONSIVE <<<<< */
-    @media screen and (max-width: 1000px) {
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1550px) {
         .heroContainer{
-            height: 70vh;
-        }
-    }
 
-    @media screen and (max-width: 550px) {
-        .heroContainer{
-            height: 70vh;
-        }
-    }
-
-    @media screen and (max-width: 450px) {
-        .heroContainer{
-            height: 75vh;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        .heroContainer{
-            height: 85vh;
         }
     }
 /*  */
 
 
-/* >>>>> TOP SECTION CONTAINER */
-    .topSection{
+/* >>>>> HERO APP CONTAINER <<<<< */
+    .heroApp{
+        height: 100%;
         width: 100%;
- 
-        display: flex;
+        backdrop-filter: blur(10px);
     }
-    /* >>> Right Section <<< */
-        .rightSection{
-            height: 100%;
-            width: 50%;
-            margin-bottom: 60px;
-            padding: 16px;
-            padding-left: 2rem;
-            padding-right: 2rem;
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> HERO WRAPPER <<<<< */
+    .heroWrapper{
+        height: 90%;
+        width: 100%;
+        padding: 40px;
+
+        color: white;
+ 
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1550px) {
+        .heroWrapper{
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .heroWrapper{
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .heroWrapper{
+            height: 85%;
+        }
+    }
+/*  */
+
+/* >>>>> RIGHT SECTION <<<<< */
+    .heroRight{
+        width: 60%;
+
+    }
+
+    .heroRight h1{
+        width: 800px;
+
+        letter-spacing: 1px;
+        font-size: 7rem;
+        font-family: "Anton SC", serif;
+        font-weight: bolder;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1390px) {
+        .heroRight{
+
+        }
+
+        .heroRight h1{
+            width: 100%;
+            font-size: 5.8rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .heroRight{
+            width: 100%;
+            height: 50%;
+        }
+
+        .heroRight h1{
+            width: 100%;
+            font-size: 5.8rem;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .heroRight{
+
+        }
+
+        .heroRight h1{
+            width: 100%;
+            font-size: 4.5rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .heroRight{
+
+        }
+
+        .heroRight h1{
+            width: 100%;
+            font-size: 3.5rem;
+        }
+    }
+/*  */
+
+/* >>>>> LEFT SECTION <<<<< */
+    .heroLeft{
+        width: 40%;
+        margin-bottom: 50px;
+    }
+
+    .heroLeft p{
+        width: 500px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-family: "Arapey", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .heroLeft button{
+        width: 500px;
+        height: 70px;
+
+        border: none;
+        outline: none;
+        border-radius: 30px;
+
+        background-color: #B9E248;
+        color: black;
+
+        font-size: 2rem;
+        font-family: "Anton SC", serif;
+        font-weight: bolder;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1390px) {
+        .heroLeft{
+
+        }
+
+        .heroLeft p{
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        .heroLeft button {
+            width: 100%;
+            /* height: ; */
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .heroLeft{
+            width: 100%;
+            height: 50%;
 
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 1.5rem;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
 
-        .moto{
-            font-family: "Open Sans", serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
-            font-variation-settings:
-            "wdth" 100;
-            font-size: 2.5rem;
-        }
-
-        .des{
-            font-family: "Open Sans", serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-            font-variation-settings:
-            "wdth" 100;
-            font-size: 1rem;
-        }
-
-        .register{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .register a{
-            width: 150px;
-            height: 60px;
-            margin-left: 10px;border: none;
-            outline: none;
-
-            color: black;
-            text-decoration: none;
-
-            font-size: 1.2rem;
-            font-family: "Open Sans", serif;
-            font-optical-sizing: auto;
-            font-weight: bolder;
-            font-style: normal;
-            font-variation-settings:
-            "wdth" 100;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .register a:first-child{
-            background-color: black;
-            color: white;
-            border-radius: 30px;
-        }
-
-        .register a:nth-child(2){
-            border-left: 2px solid black;
-            background-color: transparent;
-        }
-
-    /* >>> Left Section <<< */
-        .leftSection{
-            height: 100%;
+        .heroLeft p{
             width: 50%;
-            background-image: url("/src/components/hero/hero.png");
-            background-position: center;
-            background-repeat: no-repeat;
-
+            font-size: 1.5rem;
         }
 
-    /* >>>> RESPONSIVE <<<<< */
-    @media screen and (max-width: 1115px) {
-
-        /* >> Right Section << */
-        .moto {
-            font-size: 2rem
+        .heroLeft button {
+            width: 50%;
+            /* height: ; */
         }
-
-        /* >> Bottom Section << */
-        .bottomSection h2 {}
     }
 
-    @media screen and (max-width: 1225px) {
+    @media screen and (max-width: 1000px) {
+        .heroLeft{
 
-        /* >> Right Section << */
-        .moto {
-            font-size: 1.7rem
         }
 
-        /* >> Bottom Section << */
-        .bottomSection h2 {}
-    }
-    
-    @media screen and (max-width: 950px) {
-        /* >> Right Section << */
-        .moto{
-            font-size: 1.6rem
+        .heroLeft p{
+            width: 50%;
+            font-size: 1rem;
         }
-        
-        .register a{
+
+        .heroLeft button {
+            width: 50%;
+            /* height: ; */
+
             font-size: 1rem;
         }
     }
 
-    @media screen and (max-width: 850px) {
-        /* >> Right Section << */
-        .moto{
-            font-size: 1.4rem
-        }
-
-        .des{
-            font-size: 0.9rem;
-        }
-
-        /* >> Bottom Section << */
-        .bottomSection h2{
+    @media screen and (max-width: 500px) {
+        .heroLeft{
 
         }
-    }
 
-
-    @media screen and (max-width: 767px) {
-        /* >> Right Section << */
-        .moto{
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .des{
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        .register a{
-            flex-direction: row;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        /* >> Right Section << */
-        .rightSection{
-            width: 100%;
-        }
-        .moto{
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        .des{
+        .heroLeft p{
+            width: 70%;
             font-size: 1rem;
-            text-align: center;
-        }
-    }
-
-    @media screen and (max-width: 700px) {
-        /* >> Right Section << */
-        .rightSection{
-            width: 100%;
-        }
-        .moto{
-            font-size: 2rem;
-            text-align: center;
         }
 
-        .des{
+        .heroLeft button {
+            width: 70%;
+            /* height: ; */
+
             font-size: 1rem;
-            text-align: center;
-        }
-
-        .leftSection{
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 550px) {
-        .topSection{
-            height: 80%;
-        }
-        /* >> Right Section << */
-        .rightSection{
-            width: 100%;
-        }
-        .moto{
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .des{
-            font-size: 0.8rem;
-            text-align: center;
-        }
-
-        .bottomSection{
-            height: 15%;
-        }
-    }
-
-    @media screen and (max-width: 401px) {
-        .topSection{
-            height: 80%;
-        }
-        /* >> Right Section << */
-        .rightSection{
-            width: 100%;
-        }
-        .moto{
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .des{
-            font-size: 0.8rem;
-            text-align: center;
-        }
-
-        .register a{
-            font-size: 0.8rem;
-        }
-    }
-/*  */
-
-
-/* >>>>> BOTTOM SECTION CONTAINER <<<<< */
-    .bottomSection{
-        width: 100%;
-        border-bottom-left-radius: 40%;
-        border-bottom-right-radius: 40%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bottomSection h2{
-        font-family: "Open Sans", serif;
-        font-optical-sizing: auto;
-        font-weight: bold;
-        font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-        font-size: 2rem;
-
-        text-align: center;
-    }
-
-    .bottomSection p{
-        font-family: "Open Sans", serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-        font-size: 1.2rem;
-    }
-
-    /* >>>>> RESPONSIVE <<<<< */
-    @media screen and (max-width: 1115px) {
-        .bottomSection h2{
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 900px) {
-        .bottomSection h2{
-            font-size: 1.5rem;
-        }
-    }
-
-    @media screen and (max-width: 850px) {
-        .bottomSection h2{
-            font-size: 1.2rem;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        .bottomSection h2{
-            font-size: 1.1rem;
-        }
-
-        .bottomSection p{
-            font-size: 0.8rem;
-        }
-    }
-
-    @media screen and (max-width: 550px) {
-        .bottomSection h2{
-            font-size: 1.1rem;
-        }
-
-        .bottomSection p{
-            font-size: 0.8rem;
-        }
-    }
-
-    @media screen and (max-width: 650px) {
-        .bottomSection{
-            height: 15px;
-        }
-        .bottomSection h2{
-            padding: 10px;
-            font-size: 0.9rem;
-        }
-
-        .bottomSection p{
-            font-size: 0.6rem;
-        }
-    }
-
-    @media screen and (max-width: 401px) {
-        .bottomSection{
-            height: 15px;
-        }
-        .bottomSection h2{
-            padding: 10px;
-            font-size: 0.7rem;
-        }
-
-        .bottomSection p{
-            font-size: 0.6rem;
         }
     }
 /*  */

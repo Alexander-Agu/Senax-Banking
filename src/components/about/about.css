@@ -1,183 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
 
 /* >>>>> ABOUT SECTION CONTAINER <<<<< */
-    .about{
-        height: 60vh;
+    .aboutContainer{
+        height: 100vh;
         width: 100%;
+        padding: 40px;
+
         background-color: black;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1550px) {
+        .aboutContainer{
 
+        }
+    }
+/*  */
+
+
+/* >>>>> ABOUT TOP CONTAINER <<<<< */
+    .aboutTop{
         color: white;
-
-        background-color: transparent;
 
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
     }
-    /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1300px) {
-        .about{
-
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .about{
-            flex-direction: column;
-        }
-    }
-/*  */
-
-
-/* >>>>> RIGHT SECTION CONTAINER <<<<< */
-    .aboutRight{
-        background-color: rgb(27, 27, 27);
-        padding: 16px;
-        height: 100%;
+    /* >>> About Intro <<< */
+    .aboutIntro{
         width: 50%;
+    }
+
+    .aboutIntro p{
+        font-size: 20px;
+        font-family: "Antonio", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .aboutIntro h2{
+        width: 400px;
+
+        letter-spacing: 1px;
+        font-size: 4rem;
+        font-family: "Antonio", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .aboutSpeech{
+        width: 50%;
+        
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .topSpeech{
+        width: 700px;
 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
+        align-items: flex-end;
 
-    .aboutStatement{
-        width: 90%;
 
-        font-size: 3rem;
-        text-align: center;
-        font-family: "Open Sans", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
+        font-size: 2.5rem;
+        font-family: "Antic", serif;
+        font-weight: 400;
         font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-    }
-
-    .aboutAnswer{
-        width: 80%;
-
-        font-size: 20px;
-        font-family: "Open Sans", serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        font-variation-settings:
-        "wdth" 100;
-    }
-
-    .aboutAnswer span{
-        font-weight: bold;
     }
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1300px) {
-        .aboutRight{
+    @media screen and (max-width: 1550px) {
+        .aboutIntro h2{
+            font-size: 3rem;
+        }
+
+        .aboutIntro p{
 
         }
 
-        .aboutStatement{
+        .topSpeech{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .aboutIntro h2{
             font-size: 2.5rem;
         }
 
-        .aboutAnswer{
-            font-size: 18px;
+        .aboutIntro p{
+
         }
     }
-    
-    @media screen and (max-width: 1000px) {
-        .aboutStatement{
+
+    @media screen and (max-width: 870px) {
+        .aboutTop{
+            text-align: center;
+            width: 100%;
+            flex-direction: column;
+        }
+        .aboutIntro h2{
+            width: 100%;
+            font-size: 2.5rem;
+        }
+
+        .aboutIntro p{
+
+        }
+
+        .aboutIntro{
+            width: 100%;
+        }
+
+        .aboutSpeech{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        .aboutTop{
+            text-align: center;
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .aboutIntro h2{
+            width: 100%;
             font-size: 2rem;
         }
 
-        .aboutAnswer{
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 750px) {
-        .aboutStatement{
-            font-size: 1.5rem;
-        }
-
-        .aboutAnswer{
-            font-size: 14px;
-        }
-    }
-
-    @media screen and (max-width: 570px) {
-        .aboutStatement{
-            font-size: 1.5rem;
-        }
-
-        .aboutAnswer{
-            font-size: 12px;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .aboutRight{
-            width: 90%;
-        }
-        .aboutStatement{
+        .topSpeech{
             font-size: 1rem;
-            width: 100%;
-        }
-
-        .aboutAnswer{
-            font-size: 10px;
-            text-align: center;
-
-            height: 30%;
-            width: 100%;
-        }
-
-        .about{
-
         }
     }
 /*  */
 
 
-/* >>>>> LEFT SECTION CONTAINER <<<<< */
-    .aboutLeft{
-        background-color: rgb(27, 27, 27);
-        height: 100%;
-        width: 50%;
+/* >>>>> ABOUT RIGHT CONTAINER <<<<< */
+    .aboutBottom{
+        width: 100%;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .serv{
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        color: #B9E248;
+
+        letter-spacing: 1px;
+        font-size: 3rem;
+        font-family: "Antonio", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .aboutServices{
+        display: flex;
+        justify-content: space-between;
     }
     /* >>> RESPONSIVE <<< */
-    @media screen and (max-width: 1100px) {
-        .aboutLeft{
-            flex-direction: column;
+    @media screen and (max-width: 1550px) {
+        .aboutServices{
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            place-content: center;
+            place-items: center;
+        }
+
+        .serv{
+            font-size: 2rem;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
     }
 
     @media screen and (max-width: 1000px) {
-        .aboutLeft{
-            flex-direction: column;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .aboutLeft{
-            flex-direction: row;
-
-            height: 80%;
+        .aboutServices{
             width: 100%;
 
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            place-content: center;
+            place-items: center;
         }
-        
+
+        .serv{
+            font-size: 2rem;
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
     }
 
-    
+    @media screen and (max-width: 380px) {
+        .aboutServices{
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            place-content: center;
+            place-items: center;
+        }
+
+        .serv{
+            font-size: 2rem;
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
 /*  */

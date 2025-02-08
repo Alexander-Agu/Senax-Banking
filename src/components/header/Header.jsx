@@ -37,6 +37,11 @@ function Header() {
                         Sign Up
                     </a>
                 </li>
+
+
+                    <a href="http://localhost:5173/register" className=' specialLink'>
+                        Join Us Today
+                    </a>
             </ul>
 
         </nav>
