@@ -44,6 +44,8 @@
     }
 
     .menu, .close, #sidebar{
+        color: #B9E248;
+        font-size: 2rem;
         display: none;
 
     }
@@ -123,6 +125,7 @@
 
         .close{
             padding: 10px;
+
         }
 
         #sidebar:checked~.navList {

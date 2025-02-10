@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./signup.css"
+import { FaArrowRight } from "react-icons/fa6";
 
 function SignUp() {
     const [email, setEmail] = useState("");
@@ -8,34 +9,49 @@ function SignUp() {
 
   return (
     <div className="signupContainer">
-        <div className="signupWelcome">
-            <h2>Senx Banking</h2>
-            <p>
-                Want to join us, Enter details to create an account
-            </p>
+        <div className="signRight">
+            <div className="signRightWrapper">
+                <h2>
+                    Join Us Today
+                </h2>
+
+                <p>
+                    Manage your finances with ease—secure transactions, quick transfers, and real-time account insights, all at your fingertips
+                </p>
+            </div>
         </div>
 
-        <div className="signupInputs">
-            <input type="text" onChange={e => {setEmail(e.target.value)}} placeholder='Enter Email' value={(email)} />
+        <div className="signLeft">
+            <div className="signHeader">
+                <button>
+                    <FaArrowRight />
+                </button>
 
-            <input type="text" onChange={e => {setPasscode(e.target.value)}} value={passcode} placeholder='password'/>
+                <h2>
+                    SignUp
+                </h2>
+            </div>
 
-            <input type="text" onChange={e => {setName(e.target.value)}} value={passcode} placeholder='Full Names'/>
-        </div>
+            <div className="signForm">
+                <div className="signInputs">
+                    <input type="text" onChange={e => setName(e.target.value)} value={name} placeholder='Name' />
+                    <input type="text" onChange={e => setEmail(e.target.value)} value={email} placeholder='Email' />
+                    <input type="text" onChange={e => setPasscode(e.target.value)} value={passcode} placeholder='Password' />
+                </div>
 
-        <div className="submitsignup">
-            <button>
-                signup
-            </button>
-        </div>
+                <div className="signSubmit">
+                    <button>
+                        Create Account
+                    </button>
+                    
+                    <p>
+                        Already have an account? <a href="#">Login</a> instead.
+                    </p>
+                </div>
+            </div>
 
-        <div className="signupCP">
-            <p>
-                Copyright @senaxbanking 2025 | Privacy Policy
-            </p>
         </div>
     </div>
-
   )
 }
 

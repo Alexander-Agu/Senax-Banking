@@ -1,108 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
 
+/* >>>>> SIGNUP CONTAINER <<<<< */
+    .signupContainer{
+        height: 100vh;
+        width: 100%;
 
-/* >>>>> signup CONTAINER <<<<< */
-.signupContainer {
-    height: 65%;
-    width: 30rem;
-    background-color: white;
+        background-color: black;
 
-    border-radius: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-/* >>> RESPONSIVE <<< */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> signup WELCOME SECTION <<<<< */
-.signupWelcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* >>>>> RIGHT SECTION <<< */
+    .signRight{
+        width: 50%;
+        height: 100%;
 
-.signupWelcome h2 {
-    font-size: 2rem;
-    font-family: "Quicksand",
-        serif;
-    font-optical-sizing: auto;
-    font-weight: bolder;
-    font-style: normal;
-}
+        color: white;
+        border-top-right-radius: 100px;
 
-.signupWelcome p {
-    font-size: 25px;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-}
+        background-image: url("./SignUp.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-/* >>> RESPONSIVE <<< */
+    .signRightWrapper{
+        width: 100%;
+        height: 100%;
+
+        backdrop-filter: blur(10px);
+        border-top-right-radius: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signRight h2{
+        font-size: 5rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .signRight p{
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-family: "Arapey", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> signup INPUTS SECTION <<<<< */
-.signupInputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+/* >>>>> LEFT SECTION <<<<< */
+    .signLeft{
+        width: 50%;
+        height: 100%;
 
-.signupInputs input {
-    height: 55px;
-    width: 250px;
-    padding-left: 10px;
-
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.205);
-}
-
-/* >>> RESPONSIVE <<< */
+        display: flex;
+        flex-direction: column;
+    }
+    /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> signup SUBMIT SECTION <<<<< */
-.submitsignup {}
+/* >>>>> SIGN HEADER <<<<< */
+    .signHeader{
+        height: 25%;
+        padding: 40px;
 
-.submitsignup button {
-    width: 350px;
-    height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1rem;
+    }
 
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-}
+    .signHeader button{
+        height: 60px;
+        width: 60px;
 
-/* >>> RESPONSIVE <<< */
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #B9E248;
+        color: #B9E248;
+
+        display: grid;
+        place-content: center;
+
+        font-size: 2rem;
+    }
+
+    .signHeader h2{
+        color: #B9E248;
+
+        font-size: 3rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> signup COPY RIGHT <<<<< */
-.signupCP {}
+/* >>>>>> SIGN FORM <<<<<< */
+    .signForm{
+        height: 75%;
+        width: 100%;
 
-.signupCP p {
-    font-size: 16px;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* >>> Sign Inputs <<< */
+    .signInputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
 
-/* >>> RESPONSIVE <<< */
+    .signInputs input{
+        height: 150px;
+        width: 90%;
+
+        color: #B9E248;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #B9E248;
+
+        font-size: 7rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .signInputs input::placeholder{
+        color: #b9e248c4;
+    }
+    /* >>> Sign Submit <<< */
+    .signSubmit{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .signSubmit button{
+        width: 90%;
+        height: 100px;
+
+        border: none;
+        outline: none;
+        background-color: #B9E248;
+
+        font-size: 5rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+
+        display: grid;
+        place-content: center;
+    }
+
+    .signSubmit p{
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+    }
+
+    .signSubmit a{
+        color: #B9E248;
+    }
+    /* >>> RESPONSIVE <<< */
 /*  */

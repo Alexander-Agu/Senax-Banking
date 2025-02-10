@@ -29,8 +29,11 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
-
+    @media screen and (max-width: 400px) {
+        .contactContainer{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 /*  */
 
@@ -74,6 +77,32 @@
             font-size: 1.5rem;
         }
     }
+    @media screen and (max-width: 570px) {
+        .contacts{
+
+        }
+        
+        .contacts h2{
+            font-size: 1rem;
+        }
+
+        .contacts a{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: 0px) {
+        .contacts{
+
+        }
+        
+        .contacts h2{
+            font-size: 1rem;
+        }
+
+        .contacts a{
+            font-size: 1rem;
+        }
+    }
 /*  */
 
 
@@ -113,6 +142,20 @@
 
         .repo a{
             font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        .repo{
+
+        }
+
+        .repo h2{
+            font-size: 1rem;
+        }
+
+        .repo a{
+            font-size: 1rem;
         }
     }
 /*  */

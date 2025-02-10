@@ -1,6 +1,5 @@
 import React from 'react'
 import "./about.css"
-import SliderItem from '../sliderItem/SliderItem'
 import ServiceCard from '../serviceCard/ServiceCard'
 
 
