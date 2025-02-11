@@ -9,34 +9,29 @@ function SignUp() {
 
   return (
     <div className="signupContainer">
-        <div className="signRight">
-            <div className="signRightWrapper">
-                <h2>
-                    Join Us Today
-                </h2>
-
-                <p>
-                    Manage your finances with ease—secure transactions, quick transfers, and real-time account insights, all at your fingertips
-                </p>
-            </div>
-        </div>
-
-        <div className="signLeft">
-            <div className="signHeader">
+        <div className="signTop">
+            <div className="backHome">
                 <button>
                     <FaArrowRight />
                 </button>
-
-                <h2>
-                    SignUp
-                </h2>
             </div>
+            
+            <h1>
+                Join Us Today
+            </h1>
 
+            <p>
+                Manage your finances with ease—secure transactions, quick transfers, and real-time account insights, all at your fingertips
+            </p>
+        </div>
+
+        <div className="signBottom">
             <div className="signForm">
                 <div className="signInputs">
                     <input type="text" onChange={e => setName(e.target.value)} value={name} placeholder='Name' />
                     <input type="text" onChange={e => setEmail(e.target.value)} value={email} placeholder='Email' />
                     <input type="text" onChange={e => setPasscode(e.target.value)} value={passcode} placeholder='Password' />
+
                 </div>
 
                 <div className="signSubmit">
@@ -49,6 +44,10 @@ function SignUp() {
                     </p>
                 </div>
             </div>
+
+        </div>
+
+        <div className="signFooter">
 
         </div>
     </div>
