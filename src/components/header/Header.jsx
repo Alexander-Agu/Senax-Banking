@@ -28,18 +28,18 @@ function Header() {
                     </a>
                 </li>
                 <li className='navItem'>
-                    <a href="http://localhost:5173/register" className='navLink'>
+                    <a href="http://localhost:5173/login" className='navLink'>
                         Login
                     </a>
                 </li>
                 <li className='navItem'>
-                    <a href="http://localhost:5173/register" className='navLink'>
+                    <a href="http://localhost:5173/signup" className='navLink'>
                         Sign Up
                     </a>
                 </li>
 
 
-                    <a href="http://localhost:5173/register" className=' specialLink'>
+                    <a href="http://localhost:5173/signup" className=' specialLink'>
                         Join Us Today
                     </a>
             </ul>

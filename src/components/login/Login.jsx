@@ -7,29 +7,45 @@ function Login() {
 
   return (
     <div className="loginContainer">
-        <div className="loginWelcome">
-            <h2>Senx Banking</h2>
+        <div className="loginTop">
+            <div className="backHome2">
+                <a href='http://localhost:5173/'>
+                    
+                </a>
+            </div>
+            
+            <h1>
+                Welcome Back
+            </h1>
+
             <p>
-                Welcome back, Enter details to get logged into your account
+                Manage your finances with ease—secure transactions, quick transfers, and real-time account insights, all at your fingertips
             </p>
         </div>
 
-        <div className="loginInputs">
-            <input type="text" onChange={e => {setEmail(e.target.value)}} placeholder='Enter Email' value={(email)} />
+        <div className="loginBottom">
+            <div className="loginForm">
+                <div className="loginInputs">
+                    <input type="text" onChange={e => setEmail(e.target.value)} value={email} placeholder='Email' />
+                    <input type="text" onChange={e => setPasscode(e.target.value)} value={passcode} placeholder='Password' />
 
-            <input type="text" onChange={e => {setPasscode(e.target.value)}} value={passcode} placeholder='Password'/>
+                </div>
+
+                <div className="loginSubmit">
+                    <button>
+                        Create Account
+                    </button>
+                    
+                    <p>
+                        Dont't have an account? <a href="/signup">SignUp</a> Today.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-        <div className="submitLogin">
-            <button>
-                Login
-            </button>
-        </div>
+        <div className="loginFooter">
 
-        <div className="loginCP">
-            <p>
-                Copyright @senaxbanking 2025 | Privacy Policy
-            </p>
         </div>
     </div>
   )

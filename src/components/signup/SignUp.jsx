@@ -11,9 +11,9 @@ function SignUp() {
     <div className="signupContainer">
         <div className="signTop">
             <div className="backHome">
-                <button>
+                <a href='http://localhost:5173/'>
                     <FaArrowRight />
-                </button>
+                </a>
             </div>
             
             <h1>
@@ -40,7 +40,7 @@ function SignUp() {
                     </button>
                     
                     <p>
-                        Already have an account? <a href="#">Login</a> instead.
+                        Already have an account? <a href="/login">Login</a> instead.
                     </p>
                 </div>
             </div>

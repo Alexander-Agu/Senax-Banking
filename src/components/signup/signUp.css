@@ -25,7 +25,7 @@
         justify-content: flex-end;
     }
 
-    .backHome button{
+    .backHome a{
         width: 70px;
         height: 70px;
 
@@ -50,7 +50,7 @@
 
         }
 
-        .signBottom button{
+        .signBottom a{
 
         }
     }
