@@ -1,357 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
 
 
-
-/* >>>>> DASHBOARD APP <<<<< */
-    .dashboardApp {
+/* >>>>> DASHBOARD APP <<<<<< */
+    .dashboardApp{
         height: 100vh;
         width: 100%;
-    }
-
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> DASHBOARD SIDEBAR <<<<< */
-    .dashSidebar {
-        height: 60px;
-        width: 100%;
-        padding: 30px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .dashSidebar a{
-        color: black;
-        text-decoration: none;
-        font-size: 1.5rem;
-
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
-    }
-
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> DASHBOARD INTRO SECTION <<<<< */
-    .dashIntro{
-        width: 100%;
-        padding: 30px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /* >>> DASHBOARD MASSAGE <<< */
-    .dashMassage{
-
-    }
-
-    .dashMassage h2{
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
-    }
-    .dashMassage p{
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-    }
-    /* >>> DASHBOARD DATE <<< */
-    .dashDate p{
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bold;
-        font-style: normal;
-    }
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> DASH CONTAINER <<<<< */
-    .dashboardContainer{
-        height: 81vh;
-        width: 100%;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> DASH ACTIVITY <<<<< */
-    .dashActivity{
-        height: 90%;
-        width: 35rem;
-        padding-top: 15px;
-
-        border: 0.5px solid rgba(128, 128, 128, 0.158);
-        border-radius: 30px;
 
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
     }
+    /* >>> RESPONSIVE <<< */
+/*  */
 
-    /* >>> Act Top <<< */
-    .actTop{
-        height: 10rem;
-        width: 95%;
-        padding-left: 30px;
-        padding-top: 10px;
 
-        border: 0.5px solid rgba(128, 128, 128, 0.226);
-        border-radius: 30px;
+/* >>>>> DASHBOARD HEADER <<<<< */
+    .dashHeader{
+        width: 100%;
+        padding: 20px;
+        background-color: antiquewhite;
 
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 1.5rem;
+        align-items: center;
+
+        gap: 2rem;
     }
 
-    .actTop h2:first-child{
-        font-size: 18px;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
+    .dashHeader h2{
+
+        font-size: 2rem;
+        font-family: "Anton SC", serif;
         font-weight: 400;
         font-style: normal;
     }
+    /* >>> RESPONSIVE <<< */
+/*  */
 
-    .actTop h2:last-child{
-        font-size: 2rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
-    }
-    /* >>> Act Bottom <<< */
-    .actBottom{
+
+/* >>>>> DASHBOARD MAIN <<<<< */
+    .dashMain{
         width: 100%;
-        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
+    /* >>> RESPONSIVE <<< */
+/*  */
 
-    .actAction{
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
 
-        margin-bottom: 12px;
-        margin-top: 12px;
-    }
-
-    .actionNav{
-        width: 100%;
-    }
-
-    .actionNav button{
+/* >>>>> MAIN LEFT SECTION <<<<< */
+    .dashLeft{
+        height: 91vh;
         width: 50%;
-        height: 35px;
+        padding: 30px;
+        background-color: aqua;
 
-        border: none;
-        outline: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
     /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> DASH VIEW <<<<< */
-    .dashView {
-        height: 90%;
-        width: 35rem;
-        padding: 16px;
-
-        border: 0.5px solid rgba(128, 128, 128, 0.158);
-        border-radius: 30px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .cardContainer{
-        height: 250px;
-        width: 90%;
-        padding: 40px;
-
-        font-size: 1.5rem;
-        font-family: "Quicksand", serif;
-        font-optical-sizing: auto;
-        font-weight: bolder;
-        font-style: normal;
-
-        border-radius: 20px;
-        color: white;
-
-        background-image: url("./cardBack.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .div{
+/* >>>>> LEFT TOP SECTION <<<<< */
+    .leftTop {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /* >>> RESPONSIVE <<< */
-/*  */
+        height: 50%;
+        padding: 20px;
 
-
-/* >>>>> DASH ACTION <<<<< */
-    .dashAction {
-        height: 90%;
-        width: 35rem;
-        padding: 10px;
-        
-        border: 0.5px solid rgba(128, 128, 128, 0.158);
+        border: 2px solid #B9E248;
         border-radius: 30px;
-    }
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> TRANSFER CONTAINER <<<<< */
-    .transferContainer{
-        height: 24rem;
-        /* margin: 12px; */
 
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-evenly;
     }
 
-    .transferContainer h2{
-        font-size: 1.8rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
+    .cardDetails {
+        height: 80%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .balance,
+    .accountNum {
+        width: 100%;
+        height: 100px;
+
+        border-bottom: 2px solid #B9E248;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leftTop h2 {
+        font-size: 3rem;
+        font-family: "Anton SC", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .balance p,
+    .accountNum p {
+        font-size: 2.5rem;
+        font-family: "Arapey", serif;
         font-weight: bolder;
         font-style: normal;
     }
-
-
     /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> RECIEVERS INPUTS SECTION <<<<< */
-    .recieverInputs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+/* >>>>> LEFT BOTTOM SECTION <<<<< */
+    .leftBottom{
 
-    }
-
-    .sendCash {
-        height: 60px;
-        width: 200px;
-        padding: 16px;
-
-        border: none;
-        outline: none;
-        background-color: #d3d3d3;
-        border-radius: 16px;
-
-        font-size: 1.1rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-    /* >>> Account Numbers */
-    .accountNum{
-        margin-top: 30px;
-
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .accountNum:nth-child(2){
-        font-size: 1.5rem;
-    }
-
-    .accountNum input{
-        height: 60px;
-        width: 200px;
-        padding: 16px;
-
-        border: none;
-        outline: none;
-        background-color: #d3d3d3;
-        border-radius: 16px;
-
-        font-size: 1.1rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
     }
     /* >>> RESPONSIVE <<< */
 /*  */
 
 
-/* >>>>> TRANSFER BUTTON SECTION <<<<< */
-    .transferButton{
-        margin-top: 2rem;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+/* >>>>> MAIN RIGHT SECTION <<<<< */
+    .dashRight {
+        height: 91vh;
+        width: 50%;
+        padding: 30px;
+        background-color: pink;
     }
-
-    .transferButton button{
-        height: 50px;
-        width: 120px;
-
-        border: none;
-        outline: none;
-        border-radius: 16px;
-        background-color: black;
-        color: white;
-
-        font-size: 1rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .transferButton p{
-        font-size: 0.8rem;
-        font-family: "Montserrat", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-    }
-    /* >>> RESPONSIVE <<< */
-/*  */
-
-
-/* >>>>> dashView <<<<< */
-    
     /* >>> RESPONSIVE <<< */
 /*  */
