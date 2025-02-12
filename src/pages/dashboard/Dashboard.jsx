@@ -5,6 +5,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { BiTransferAlt } from "react-icons/bi";
 import { GiExtraTime } from "react-icons/gi";
 import "./dashboard.css"
+import Transfer from '../../components/transfer/Transfer';
 
 
 function Dashboard() {
@@ -77,7 +78,7 @@ function Dashboard() {
             </section>
 
             <section className='dashRight'>
-
+                <Transfer />
             </section>
 
         </article>

@@ -58,9 +58,9 @@
 
 /* >>>>> MAIN LEFT SECTION <<<<< */
     .dashLeft{
-        height: 91vh;
+        height: 85vh;
         width: 50%;
-        padding: 30px;
+        padding: 20px;
 
         display: flex;
         flex-direction: column;
@@ -173,11 +173,9 @@
 
 /* >>>>> MAIN RIGHT SECTION <<<<< */
     .dashRight {
-        height: 91vh;
+        height: 85vh;
         width: 50%;
-        padding: 30px;
-
-        background-color: aliceblue;
+        padding: 20px;
     }
     /* >>> RESPONSIVE <<< */
 /*  */
