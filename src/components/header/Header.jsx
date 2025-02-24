@@ -1,49 +1,40 @@
-import React from 'react';
-import './header.css';
-import { TiThMenuOutline } from "react-icons/ti";
-import { MdClose } from "react-icons/md";
+import React from 'react'
+import "./header.css"
+import { IoMdMenu } from "react-icons/io";
+import { RiCloseLargeLine } from "react-icons/ri";
 
 function Header() {
   return (
-    <header className='header'>
+    <header className='headerContainer'>
         <div className="logo">
-            <a href="http://localhost:5173/">S-B</a>
+            <h2>Senax Banking</h2>
         </div>
 
+        <input type="checkbox" id='sidebar' />
+        <label htmlFor="sidebar" className='openHeader'>
+            <IoMdMenu />
+        </label>
         <nav className='navbar'>
-            <input type="checkbox" id='sidebar' />
-            <label htmlFor="sidebar" className='menu'> {/* Opens the sidebar */}
-                <TiThMenuOutline />
-            </label>
-
             <ul className='navList'>
-                <label htmlFor="sidebar" className='close'> {/* Closes the sidebar */}
-                    <MdClose />
+                <label htmlFor="sidebar" className='headerClose'>
+                    <RiCloseLargeLine />
                 </label>
-
-
                 <li className='navItem'>
-                    <a href="http://localhost:5173/" className='navLink'>
-                        Home
-                    </a>
+                    <p>Home</p>
                 </li>
                 <li className='navItem'>
-                    <a href="http://localhost:5173/login" className='navLink'>
-                        Login
-                    </a>
+                    <p>Service</p>
                 </li>
                 <li className='navItem'>
-                    <a href="http://localhost:5173/signup" className='navLink'>
-                        Sign Up
-                    </a>
+                    <p>Login</p>
                 </li>
-
-
-                    <a href="http://localhost:5173/signup" className=' specialLink'>
-                        Join Us Today
-                    </a>
             </ul>
 
+            <div className="toSignUp">
+                <div className="createAccount">
+                    <p>Create Account</p>
+                </div>
+            </div>
         </nav>
     </header>
   )

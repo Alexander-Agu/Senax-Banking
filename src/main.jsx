@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './style.css'
-import Dashboard from './pages/dashboard/Dashboard'
+import Hero from "./components/hero/Hero"
+import Home from "./pages/home/Home"
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Dashboard />
+    <Home />
   </StrictMode>,
 )

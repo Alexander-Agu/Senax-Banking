@@ -1,137 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Great+Vibes&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Protest+Strike&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Great+Vibes&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
 /* >>>>> HEADER CONTAINER <<<<< */
-    .header{
-        height: 80px;
+    .headerContainer{
         width: 100%;
-        padding: 35px;
-        background-color: transparent;
+        height: 80px;
+        padding: 10px;
 
+        position: sticky;
+        top: 0;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .logo a{
-        color: white;
-        text-decoration: none;
-
-        font-family: "Bebas Neue", serif;
-        font-weight: 400;
+    .logo{
+        font-family: "Anton SC", serif;
+        font-weight: 100;
         font-style: normal;
-        font-size: 3rem;
+        font-size: 16px;
+
+        /* width: 10%; */
     }
 
-    /* >>>>> RESPONSIVE <<<<< */
-    @media screen and (max-width: 080px) {
-        .header{
-            
-        }
+    #sidebar{
+        display: none;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (min-width: 800px) {
+        
     }
 /*  */
 
 
-/* >>>>> NAVBAR CONTAINER <<<<< */
+/* >>>>> NAVBAR SECTION <<<<< */
     .navbar{
+        width: 350px;
+        height: 100vh;
+        padding: 20px;
+
+        background-color: #B9E248;
+
+        position: fixed;
+        top: 0;
+        right: -350px;
+
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .menu, .close, #sidebar{
-        color: #B9E248;
+    .openHeader{
         font-size: 2rem;
-        display: none;
-
+        color: #B9E248;
     }
-    /* >>>> RESPONSIVE <<<< */
-    @media screen and (max-width: 800px) {
-        .navbar{
 
+    .headerClose{
+        font-size: 2rem;
+    }
+
+    #sidebar:checked ~ .navbar{
+        right: 0;
+        transition: 300ms;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (min-width: 800px) {
+        .navbar{
+            width: 65%;
+            height: initial;
+
+            background-color: transparent;
+
+            right: 0;
+
+            flex-direction: row;
+            /* align-items: flex-end; */
+            justify-content: space-between;
         }
-        
-        .menu,
-        .close {
-            display: block;
+
+        .openHeader, .headerClose{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .navbar{
+            width: 55%;
+            height: initial;
+
+            background-color: transparent;
+
+            right: 0;
+
+            flex-direction: row;
+            /* align-items: flex-end; */
+            justify-content: space-between;
+        }
+
+        .openHeader, .headerClose{
+            display: none;
         }
     }
 /*  */
-
 
 /* >>>>> NAVLIST CONTAINER <<<<< */
     .navList{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1rem;
-
         list-style: none;
-    }
 
-    .navItem {
-        font-size: 20px;
-        font-family: "Bebas Neue", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .navLink {
-        color: white;
-        text-decoration: none;
-    }
-
-    .specialLink{
-        width: 200px;
-        height: 50px;
-
-        color: black;
-        text-decoration: none;
-
-        outline: none;
-        border: none;
-        border-radius: 30px;
-        background-color: #B9E248;
-
-        letter-spacing: 1px;
-        font-size: 1.5rem;
-        font-family: "Anton SC", serif;
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
         font-weight: bold;
         font-style: normal;
 
-        display: grid;
-        place-content: center;
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+
     }
-    /* >>>>> RESPNSIVE <<<<< */
-    @media screen and (max-width: 800px) {
-        .navList {
-            height: 100vh;
-            width: 300px;
+    /* >>> RESPONSIVE <<< */
+    @media screen and (min-width: 800px) {
+        .navList{
+            margin: 0 auto;
 
-            position: fixed;
-            top: 0;
-            right: -300px;
-            z-index: 1;
-            background-color: black;
-            
-            flex-direction: column;
-            justify-content: flex-start;
-            display: none;
-        }
+            height: initial;
 
-        .close{
-            padding: 10px;
-
-        }
-
-        #sidebar:checked~.navList {
-            right: 0;
-            transition: 250ms;
-            display: flex;
+            flex-direction: row;
+            gap: 1rem;
         }
     }
 /*  */
+
+
+/* >>>>> TO SIGN UP CONTAINER <<<<< */
+    .toSignUp{
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .createAccount{
+        width: 190px;
+        height: 40px;
+
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        
+        border-radius: 20px;
+        background-color: black;
+
+        display: grid;
+        place-content: center;
+        
+    }
+
+    .createAccount p{
+        color: #B9E248;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (min-width: 800px) {
+        .toSignUp{
+            justify-content: flex-end;
+        }
+    }
