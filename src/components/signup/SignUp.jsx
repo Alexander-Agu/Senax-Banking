@@ -10,11 +10,11 @@ function SignUp() {
   return (
     <div className="signupContainer">
         <div className="signTop">
-            <div className="backHome">
+            {/* <div className="backHome">
                 <a href='http://localhost:5173/'>
                     <FaArrowRight />
                 </a>
-            </div>
+            </div> */}
             
             <h1>
                 Join Us Today
