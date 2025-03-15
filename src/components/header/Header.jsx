@@ -31,9 +31,9 @@ function Header() {
             </ul>
 
             <div className="toSignUp">
-                <div className="createAccount">
+                <a href='#' className="createAccount">
                     <p>Create Account</p>
-                </div>
+                </a>
             </div>
         </nav>
     </header>
