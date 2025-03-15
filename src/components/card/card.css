@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+
+/* >>>>> CARD CONTAINER <<<<< */
+    .cardContainer{
+        width: 90%;
+        padding: 20px;
+
+        background-color: #808080cc;
+        border: 1px solid #808080;
+        border-radius: 30px;
+    }
+
+    #dropDown{
+        display: none;
+    }
+
+    .cardContainer p{
+        color: white;
+
+        font-size: 1.5rem;
+        font-family: "Arapey", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .cardTitle{
+        color: white;
+
+        font-size: 2rem;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CARD INTRO <<<<< */
+    .cardIntro{
+        width: 100%;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    #dropDown:checked ~ .cardIntro label{
+        display: none;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CARD INFO <<<<< */
+    .cardInfo{
+        margin-top: 20px;
+        display: none;
+    }
+
+    #dropDown:checked~.cardInfo {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .up{
+        color: #B9E248;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
