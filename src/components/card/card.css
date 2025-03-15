@@ -47,9 +47,9 @@
     }
 
 
-    #dropDown:checked ~ .cardIntro label{
+    /* #dropDown:checked ~ .cardIntro label{
         display: none;
-    }
+    } */
     /* >>> RESPONSIVE <<< */
 /*  */
 
@@ -57,11 +57,8 @@
 /* >>>>> CARD INFO <<<<< */
     .cardInfo{
         margin-top: 20px;
-        display: none;
-    }
 
-    #dropDown:checked~.cardInfo {
-        display: block;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;

@@ -1,36 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./card.css"
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
+import More from './More';
 
-function Card() {
+function Card({title, intro, more, id}) {
+    const [checked, setChecked] = useState(false);
+    let showContent = "";
+    let dropDown = showContent = <FaChevronDown style={{display: "none"}} />;
+
+    if (checked){
+        showContent = <More more={more} check={setChecked} />
+        dropDown = "";
+    } else {
+        showContent = "";
+        dropDown = showContent = <FaChevronDown /> ;
+    }
+
     return (
         <div className="cardContainer">
             <h1 className='cardTitle'>
-                Online Money Exchange
+                {title}
             </h1>
             <input type="checkbox" id='dropDown' />
 
             <div className="cardIntro">
                 <p>
-                    Online money exchange in the Senax banking app enables quick and secure currency conversion for international transactions.
+                    {intro}
                 </p>
 
-                <label htmlFor="dropDown">
-                    <FaChevronDown />
+                <label htmlFor="dropDown" onClick={()=> setChecked(true)}>
+                    {dropDown}
                 </label>
             </div>
 
-            
-            <div className='cardInfo'>
-                <p>
-                    Senax offers real-time exchange rates, low fees, and strong security features like encryption and two-factor authentication. Users can effortlessly convert currencies for travel, business, or online purchases, ensuring a smooth and transparent experience.
-                </p>
-
-                <label htmlFor="dropDown">
-                    <FaChevronUp className='up' />
-                </label>
-            </div>
+            {showContent}
         </div>
     )
 }
