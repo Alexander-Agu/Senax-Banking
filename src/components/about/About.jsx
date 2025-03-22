@@ -9,7 +9,7 @@ function About() {
         {
             aboutModels.map(x => {
                 const {title, intro, more, id} = x;
-                return <Card title={title} intro={intro} more={more} id={id} />
+                return <Card title={title} intro={intro} more={more} id={id} key={id} />
             })
         }
     </article>
