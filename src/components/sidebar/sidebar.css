@@ -1,0 +1,83 @@
+
+
+/* >>>>> SIDEBAR CONTAINER <<<<< */
+    .sidebarContainer{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        background-color: #93E4C1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .sidebarContainer{
+
+            flex-direction: row;
+            justify-content: center;
+            gap: 6rem;
+        }
+    }
+/*  */
+
+
+/* >>>>> TOPSIDE <<<<< */
+    .topSide{
+        width: 100%;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .topSide{
+            width: 100px;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+/*  */
+
+
+/* >>>>> BOTTOMSIDE <<<<< */
+    .bottomSide{
+        width: 100%;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .bottomSide{
+            width: 100px;
+            height: 100%;
+            /* background-color: aliceblue; */
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+/*  */
+
+
+/* >>>>> SIDEBAR ITEMS <<<<< */
+    .sidebarItem{
+        height: 50px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebarItem a{
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
