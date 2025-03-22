@@ -1,0 +1,51 @@
+
+
+/* >>>>> DASHBOARD APP <<<<< */
+    .dashboardApp{
+        width: 100%;
+        height: 100vh;
+/* 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+
+        display: flex;
+        flex-direction: row;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .dashboardApp{
+            flex-direction: column;
+        }
+    }
+/*  */
+
+
+/* >>>>> NAVIGATION <<<<< */
+    .sideNavigation{
+        width: 10%;
+        height: 100vh;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .sideNavigation{
+            width: 100%;
+            height: 70px;
+        }
+    }
+/*  */
+
+
+/* >>>>> DASHBOARD CONTAINER <<<<< */
+    .dashboardContainer{
+        width: 90%;
+        height: 100vh;
+        background-color: black;
+    }
+    /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 450px) {
+        .dashboardContainer{
+            width: 100%;
+        }
+    }
+/*  */
