@@ -1,6 +1,7 @@
 import React from 'react'
 import "./dashHome.css"
 import DashCard from '../dashCard/DashCard'
+import TransectionData from '../transectionData/TransectionData'
 
 function DashHome() {
   return (
@@ -17,6 +18,12 @@ function DashHome() {
 
         <div className="dashRecentHistory">
           <h2>Recent Transections</h2>
+
+          <div className="transectCard">
+            <TransectionData />
+            <TransectionData />
+            <TransectionData />
+          </div>
         </div>
     </section>
   )
