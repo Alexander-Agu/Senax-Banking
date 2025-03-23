@@ -16,6 +16,25 @@
         justify-content: space-between;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .dashCard{
+            height: 200px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .dashCard{
+            height: 150px;
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .dashCard{
+            height: 120px;
+            width: 100%;
+        }
+    }
 /*  */
 
 
@@ -28,6 +47,23 @@
         font-style: normal;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .cardType{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cardType{
+            font-size: 2rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cardType{
+            font-size: 1.5rem;
+        }
+    }
 /*  */
 
 
@@ -41,4 +77,21 @@
         font-size: 3rem
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1300px) {
+        .cardCash{
+            font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cardCash{
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cardCash{
+            font-size: 2.5rem;
+        }
+    }
 /*  */

@@ -16,7 +16,7 @@ function DashHome() {
         </div>
 
         <div className="dashRecentHistory">
-
+          <h2>Recent Transections</h2>
         </div>
     </section>
   )

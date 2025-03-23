@@ -1,8 +1,19 @@
 
 
 /* >>>>> DASH HOME APP <<<<< */
-
+    .dashHomeApp{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 7rem;
+    }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 900px) {
+        .dashHomeApp{
+            gap: 2rem;
+        }
+    }
 /*  */
 
 
@@ -21,10 +32,24 @@
         gap: 5rem;
     }
     /* >>> RESPONSIVE <<< */
+    @media screen and (max-width: 1000px) {
+        .cards{
+            gap: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .cards{
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
 /*  */
 
 
 /* >>>>> DASH RECENT HISTORY <<<<< */
-
+    .dashRecentHistory{
+        padding: 12px;
+    }
     /* >>> RESPONSIVE <<< */
 /*  */
