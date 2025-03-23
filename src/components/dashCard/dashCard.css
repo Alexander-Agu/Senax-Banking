@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+/* >>>>> DASH CARD CONTAINER <<<<< */
+    .dashCard{
+        width: 400px;
+        height: 250px;
+        padding: 12px;
+
+        background-color: aqua;
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CARD TYPE <<<<< */
+    .cardType{
+        font-size: 2rem;
+        font-family: "Anuphan", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> CASH TYPE <<<<< */
+    .cardCash{
+        padding-left: 16px;
+
+        font-family: "Belleza", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */

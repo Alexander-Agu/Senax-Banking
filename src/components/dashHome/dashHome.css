@@ -1,0 +1,30 @@
+
+
+/* >>>>> DASH HOME APP <<<<< */
+
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH CARDS <<<<< */
+    .dashCards{
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cards{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    /* >>> RESPONSIVE <<< */
+/*  */
+
+
+/* >>>>> DASH RECENT HISTORY <<<<< */
+
+    /* >>> RESPONSIVE <<< */
+/*  */
