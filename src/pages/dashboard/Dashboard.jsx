@@ -1,6 +1,7 @@
 import React from 'react'
 import "./dashboard.css"
 import Sidebar from '../../components/sidebar/Sidebar'
+import DashHome from '../../components/dashHome/DashHome'
 
 function Dashboard() {
   return (
@@ -11,7 +12,7 @@ function Dashboard() {
 
 
         <article className='dashboardContainer'>
-        ref
+        <DashHome />
         </article>
         
     </main>
